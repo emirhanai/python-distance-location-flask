@@ -1,0 +1,21 @@
+2021-08-11 14:27:35,283 - DEBUG - _new_conn - 975 - Starting new HTTPS connection (1): maps.googleapis.com:443
+2021-08-11 14:27:36,114 - DEBUG - _make_request - 461 - https://maps.googleapis.com:443 "GET /maps/api/distancematrix/json?destinations=banaz&origins=Moskovskaya+Kol%27tsevaya+Avtomobil%27naya+Doroga%2C+Russia&key=AIzaSyCraUbXXMzYvlVc98TAqnC8SUpa6sY9U1Y HTTP/1.1" 200 None
+2021-08-11 14:27:36,148 - INFO - _log - 225 - 127.0.0.1 - - [11/Aug/2021 14:27:36] "GET / HTTP/1.1" 200 -
+2021-08-11 14:28:04,291 - DEBUG - _new_conn - 975 - Starting new HTTPS connection (1): maps.googleapis.com:443
+2021-08-11 14:28:05,008 - DEBUG - _make_request - 461 - https://maps.googleapis.com:443 "GET /maps/api/distancematrix/json?destinations=banazd&origins=Moskovskaya+Kol%27tsevaya+Avtomobil%27naya+Doroga%2C+Russia&key=AIzaSyCraUbXXMzYvlVc98TAqnC8SUpa6sY9U1Y HTTP/1.1" 200 None
+2021-08-11 14:28:05,015 - INFO - _log - 225 - 127.0.0.1 - - [11/Aug/2021 14:28:05] "GET / HTTP/1.1" 200 -
+2021-08-11 14:28:29,287 - DEBUG - _new_conn - 975 - Starting new HTTPS connection (1): maps.googleapis.com:443
+2021-08-11 14:28:30,610 - DEBUG - _make_request - 461 - https://maps.googleapis.com:443 "GET /maps/api/distancematrix/json?destinations=&origins=Moskovskaya+Kol%27tsevaya+Avtomobil%27naya+Doroga%2C+Russia&key=AIzaSyCraUbXXMzYvlVc98TAqnC8SUpa6sY9U1Y HTTP/1.1" 200 None
+2021-08-11 14:28:30,610 - ERROR - emirhan - 40 - INVALID_REQUEST
+2021-08-11 14:28:30,618 - ERROR - log_exception - 1455 - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\emirhan.bulut\pythonProject6\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\emirhan.bulut\pythonProject6\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\emirhan.bulut\pythonProject6\venv\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\emirhan.bulut\pythonProject6\venv\lib\site-packages\flask\app.py", line 1699, in make_response
+    f"The view function for {request.endpoint!r} did not"
+TypeError: The view function for 'emirhan' did not return a valid response. The function either returned None or ended without a return statement.
+2021-08-11 14:28:30,674 - INFO - _log - 225 - 127.0.0.1 - - [11/Aug/2021 14:28:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
