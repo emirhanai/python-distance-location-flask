@@ -20,7 +20,7 @@ def emirhan():
     try:
         #The loop is starting.
         while True:
-            a = input("Giriş yapmak için 'A' tuşuna basınız: ")
+            a = input("Press 'A' button to login: ")
             #'A' key will not enter external software.
             if a == ("A"):
                 gmaps = googlemaps.Client(key='AIzaSyCraUbXXMzYvlVc98TAqnC8SUpa6sY9U1Y')
@@ -38,7 +38,7 @@ def emirhan():
                 #The code is projected onto the screen and the return process begins.
                 return distance
             else:
-                print("Tekrar deneyiniz")
+                print("Try again...")
                 continue
     #It logs errors to the log file.
     except Exception as ex:
