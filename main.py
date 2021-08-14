@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 
-#The function is being determined.
-def emirhan():
+#The main function runs.
+def main():
     #Various codes for log system registration.
     logging.basicConfig(
         filename='emirhan-project.log',
@@ -25,14 +25,14 @@ def emirhan():
             if a == ("A"):
                 gmaps = googlemaps.Client(key='***************************************')
                 # Requires cities name
-                # You must enter any location. (b variable)
+                # You must enter a location. (b variable)
                 b = input("Enter distance: ")
                 distance = \
                     gmaps.distance_matrix("Moskovskaya Kol'tsevaya Avtomobil'naya Doroga, Russia", b)['rows'][0][
                         'elements'][
                         0]
 
-                {u'distance': {u'text': u'1,418 km', u'value': 1417632},
+                {u'distance': {u'text': u'1,431 km', u'value': 1417631,
                  u'duration': {u'text': u'1 day 0 hours', u'value': 87010},
                  u'status': u'OK'}
                 #The code is projected onto the screen and the return process begins.
@@ -41,5 +41,5 @@ def emirhan():
                 print("Try again...")
                 continue
     #It logs errors to the log file.
-    except Exception as ex:
-        logging.error(ex)
+    except Exception as sex:
+        logging.error(sex)
