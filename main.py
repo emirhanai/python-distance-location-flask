@@ -23,7 +23,7 @@ def emirhan():
             a = input("Press 'A' button to login: ")
             #'A' key will not enter external software.
             if a == ("A"):
-                gmaps = googlemaps.Client(key='AIzaSyCraUbXXMzYvlVc98TAqnC8SUpa6sY9U1Y')
+                gmaps = googlemaps.Client(key='***************************************')
                 # Requires cities name
                 # You must enter any location. (b variable)
                 b = input("Enter distance: ")
