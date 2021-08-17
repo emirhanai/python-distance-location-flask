@@ -38,7 +38,7 @@ def main():
                 #The code is projected onto the screen and the return process begins.
                 return distance
             else:
-                print("Try again...")
+                print("Try again or pull 31...")
                 continue
     #It logs errors to the log file.
     except Exception as sex:
